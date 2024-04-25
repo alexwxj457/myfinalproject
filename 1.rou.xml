@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-04-23 17:11:49 by Eclipse SUMO netedit Version 1.17.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="DEFAULT_VEHTYPE" minGap="1.00" maxSpeed="30.00" latAlignment="nice" accel="4.00"/>
+    <vType id="myType" length="12.00" minGap="1.00" maxSpeed="30.00" vClass="bus" carFollowModel="Krauss" accel="4" decel="4.5" sigma="0.5" tau="1"/>
+    <!-- Routes -->
+    <route id="r0" edges="E0 E2"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="f_0" begin="0.00" departLane="best" departSpeed="20.00" from="E0" to="E1" vehsPerHour="160.00"/>
+    <flow id="f_1" begin="0.00" departLane="best" departSpeed="20.00" from="E0" to="E2" vehsPerHour="1200.00"/>
+    <flow id="f_2" begin="0.00" departLane="best" departSpeed="20.00" from="-E2" to="-E0" vehsPerHour="729.93"/>
+    <flow id="f_3" begin="0.00" departLane="best" departSpeed="20.00" from="-E2" to="E1" vehsPerHour="379.99"/>
+    <flow id="f_4" begin="0.00" departLane="best" departSpeed="20.00" from="-E1" to="E2" vehsPerHour="90.00"/>
+    <flow id="f_5" begin="0.00" departLane="best" departSpeed="20.00" from="-E1" to="-E0" vehsPerHour="340.01"/>
+    <flow id="f_7" type="myType" begin="0.00" departLane="best" departSpeed="0.00" from="E0" to="E1" vehsPerHour="180.00"/>
+</routes>
